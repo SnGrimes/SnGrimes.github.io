@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app = "portfolio">
+    <!--Portfolio site-->
+    <head>
+    <title>Shantia's Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat' rel='stylesheet' type='text/css'>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/portfolio.js"></script>
+     <script src="http://code.angularjs.org/1.4.7/angular-animate.min.js"></script>
+        
+    </head>
+    
+    <body>
+        <header><h1>The Portfolio of Shantia Grimes</h1></header>
+        <nav>    
+            <ul>
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/blog">Blog</a></li> 
+                <li><a href="#/contact">About</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper" ng-view></div>
+        <footer><p>Nothing</p></footer>
+        
+    </body>
+        
+</html>

@@ -1,0 +1,367 @@
+
+                                    /* Site wide CSS */
+* {
+    margin: 0;
+    
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+
+html {
+    background-color: white;   
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+                                    /* Main CSS*/
+
+body {
+    position: relative;
+    background-color: #FAF6ED;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 2px 0px 3px #D6C296, -2px 0px 3px #D6C296;
+    padding-bottom:10px;
+    min-height: 100%;
+
+
+}
+
+header {
+    height: 40%;
+    background:#6295A6;
+}
+
+header h1 {
+    color: #FFF;
+    text-align: center;
+}
+nav {
+    height: 20%;
+    background:#6295A6;
+    padding-top: 5px;
+    padding-bottom: 5px;   
+}
+
+nav ul {
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+  text-decoration: none;
+  font: 2em 'Montserrat', Arial;
+  color: #C3DBE3;
+  border: black;
+  margin: 0 10px 0 10px;
+  text-shadow: -1px -1px #41798C, 1px -1px #41798C;
+  transition: text-shadow 1s;
+}
+
+nav ul li:hover {
+   text-shadow: 1px 1px 1px #C3DBE3, 2px 2px 1px #7DADBD, 3px 3px 1px #4F8A9E, 4px 4px 1px #41798C, 5px 5px 1px #275F73, 6px 6px 1px #265B6E, 7px 7px 12px #123E4D;
+}
+
+nav a, nav a:visited {
+  text-decoration: none;
+  color: #C3DBE3;
+  
+}
+
+
+.wrapper {
+    height: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+    
+} 
+
+
+footer, .wrapper:after {
+    height: 80px;
+}
+
+footer {
+    background-color: #6295A6;
+    box-shadow: .5px .5px #306475, -.5px -.5px #507D8C;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    padding:1em;
+    margin: 0 auto;
+}
+
+                                        /* Main Page CSS */
+
+
+/* Work */
+
+.landingPage {
+    
+}
+
+.landingPage:after {
+    content: "";
+    display: block;
+    
+}
+
+.intro {
+    font: 1em 'Montserrat', sans-serif;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+    
+.skills {text-align: center;}   
+.skills div {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;    
+    padding: 10px;
+    margin: 5px 5px 0 5px;
+    width: 20%;
+    height: 150px;
+    vertical-align: top;
+
+}
+
+
+                                    /* Blog page */
+.blog {
+    width:65%;
+    margin: 1%;
+    float: left;
+    display:block;
+    height: 100%;
+    position: relative;
+    top: 0;
+}
+
+.blogContent {
+    padding-top: 5%;
+}
+
+.blogContent p {
+    text-align: left;
+    font-family: 'Domine'
+}
+
+.blog article:last-child {
+    margin-bottom:10%;
+}
+.blog article {
+    padding: 10px;
+    margin-bottom: 5%;
+    box-shadow: 0 1px 2px #ADB7BA, 0px -1px 3px #ADB7BA;   
+}
+
+.blog article p {
+    padding: 5px 0 5px 0;
+}
+
+
+.sidebar {
+    width: 30%;
+    margin: 1%;
+    float: right;
+    display: block;
+    padding-top: 3%;
+    
+    height: 100%
+}
+.sidebar p {
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+}
+
+    
+                                          /* Contact page */
+
+.contact {
+    width: 80%;
+    height: 100%;  
+    margin: 0 auto;
+    
+}
+
+.contact p {
+    width: 80%;
+    text-align: center;
+    padding:10px;
+    margin: 0 auto;
+    clear: both;
+    font: 1em 'Montserrat', serif;
+}
+
+.contact span {
+    font-weight: bold;
+}
+
+.contactDetails {
+    font-size: 2em;
+    
+}
+
+
+.skillList {
+    width: 70%;
+    position: relative;
+    left: 10%;
+    padding: 20px;
+    vertical-align: top;
+    
+    
+}
+.skillList ul {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 300px;
+    list-style-type: none;
+    margin-right: 10px;
+    
+}
+
+.skillList img {
+    width: 50%;
+    float: right;
+    margin-left: 10px;
+}
+
+
+                                    /*Slider Widget */
+
+.slide.ng-hide-add,
+.slide.ng-hide-remove {
+  transition: all linear 0.5s;
+  display: block!important;
+}
+.slide.ng-hide-add.ng-hide-add-active,
+.slide.ng-hide-remove {
+  opacity: 0;
+}
+.slide.ng-hide-add,
+.slide.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1;
+}
+
+
+.slider {
+  position: relative;
+  height: 400px;
+  display: block;
+  padding: 5px;
+  width: 40%; /*610px;*/
+  margin: auto;
+  margin-top: 10px;
+  
+}
+
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.slideTitle h4 {
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+#Arrows {
+    fill:#6295A6;
+    fill-rule: evenodd;
+}
+
+#ArrowRight:hover {
+    fill: #9FBBC4;
+}
+
+#ArrowLeft:hover {
+    fill: #9FBBC4;
+}
+
+/*fix the arrow position for mozilla*/
+.arrows {
+  position: absolute;
+  z-index: 1;
+  top: 280px;
+  left: 30%;
+
+}
+
+.arrows a:visited {
+  color: white;
+}
+
+.slide img {
+    width: 100%;
+    box-shadow: 0px 0px 15px #999;
+}
+
+/*                   Media Queries                  */
+
+@media screen and (max-width: 1024px) {
+    .slider {
+        position: relative;
+        width: 60%;
+        top: 40px;
+    }
+    .arrows {
+        top: 280px;
+        left: 30%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .arrows {
+        top: 280px;
+        
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    
+    .arrows {
+        top: 350px;
+        left: 35%;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .arrows {
+        top: 450px;
+        left: 40%;
+    }
+}
+

@@ -1,0 +1,21 @@
+<div class="slider">
+    
+    
+    <div class="slide" ng-repeat="image in images" ng-show="image.visible">
+        <a href="{{image.link}}"><img ng-src="img/{{image.src}}" /></a>
+        <div class="slideTitle"><h4>{{image.title}}</h4></div>
+        
+    <div class="arrows">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" id="Arrows">
+            <g id="layer1">
+                <path ng-click="next()"id="ArrowRight" d="M104.852 46.972h24.944V29.867l36.816 23.268-36.674 22.186V59.14h-25.086z"/>
+                <path ng-click="prev()" id="ArrowLeft" d="M89.992 59.36h-24.96v16.374l-36.826-22.54L64.89 30.01v17.174h25.102z"/>
+            </g>
+        </svg>
+
+    
+</div>
+    
+    </div>
+    
