@@ -31,7 +31,7 @@ viewApp.directive('viewer', function($timeout) {
 
 viewApp.controller('ViewController', function($scope) {
   $scope.images = [{
-    src:'responsive.png',
+    src:'responsive.PNG',
     title: 'Responsive Page',
     link: 'Testbed/Responsive site/main.html'
   }, {
