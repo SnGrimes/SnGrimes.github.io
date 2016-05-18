@@ -148,7 +148,7 @@ footer {
 }
 
 .skills div:hover {
-  font-size: 1.5em;
+  background-color: rgba(98,149,166,.5);
 }
 
 
