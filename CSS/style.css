@@ -143,7 +143,12 @@ footer {
     width: 20%;
     height: 150px;
     vertical-align: top;
+    z-index: 1;
 
+}
+
+.skill div:hover {
+  width: 30%;
 }
 
 
@@ -187,7 +192,7 @@ footer {
     float: right;
     display: block;
     padding-top: 3%;
-    
+    z-index: -1;
     height: 100%
 }
 .sidebar p {
