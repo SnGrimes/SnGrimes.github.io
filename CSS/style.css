@@ -148,7 +148,7 @@ footer {
 }
 
 .skills div:hover {
-  width: 30%;
+  background: grey;
 }
 
 
