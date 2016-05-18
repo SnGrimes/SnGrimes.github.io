@@ -231,7 +231,7 @@ footer {
     font-weight: bold;
 }
 
-.contact span, h2, h4 {
+.contact span, .skills h2, .skills h4 {
   text-shadow: 1px 1px #ADB7BA;
 }
 
