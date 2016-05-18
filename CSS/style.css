@@ -229,7 +229,10 @@ footer {
 
 .contact span {
     font-weight: bold;
-    text-shadow: 1px 1px #ADB7BA;
+}
+
+.contact span, h2, h4 {
+  text-shadow: 1px 1px #ADB7BA;
 }
 
 .contactDetails {
