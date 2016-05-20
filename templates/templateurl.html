@@ -1,21 +1,17 @@
 <div class="slider">
     
     
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" class="arrows"><path ng-click="prev()" id="ArrowLeft" class="st0" d="M61.8 29.4h-25v16.4L0 23.2 36.7 0v17.2h25.1v12.2z"/></svg>
     <div class="slide" ng-repeat="image in images" ng-show="image.visible">
         <a href="{{image.link}}"><img ng-src="img/{{image.src}}" /></a>
         <div class="slideTitle"><h4>{{image.title}}</h4></div>
         
-    <div class="arrows">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" id="Arrows">
-            <g id="layer1">
-                <path ng-click="next()"id="ArrowRight" d="M104.852 46.972h24.944V29.867l36.816 23.268-36.674 22.186V59.14h-25.086z"/>
-                <path ng-click="prev()" id="ArrowLeft" d="M89.992 59.36h-24.96v16.374l-36.826-22.54L64.89 30.01v17.174h25.102z"/>
-            </g>
-        </svg>
-
     
-</div>
+        
+        
+             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" class="arrows"><path ng-click="next()" id="ArrowRight" class="st0" d="M.1 17.3H25V.2l36.8 23.3-36.7 22.1V29.4H0l.1-12.1z"/></svg>   
+                
+
     
     </div>
     
