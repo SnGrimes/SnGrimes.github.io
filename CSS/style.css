@@ -308,25 +308,27 @@ footer {
     text-align: center;
 }
 
-#Arrows {
+.Arrows {
     fill:#6295A6;
     fill-rule: evenodd;
 }
 
-#ArrowRight:hover {
-    fill: #9FBBC4;
+#ArrowRight {
+    float: right;
+    position: absolute;
+    right: 10px;
 }
 
-#ArrowLeft:hover {
+#ArrowRight:hover, #ArrowLeft:hover {
     fill: #9FBBC4;
 }
 
 /*fix the arrow position for mozilla*/
 .arrows {
-  position: absolute;
+  
   z-index: 1;
-  top: 280px;
-  left: 30%;
+   fill:#6295A6;
+    fill-rule: evenodd;
 
 }
 
