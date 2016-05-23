@@ -315,13 +315,13 @@ footer {
 
 #ArrowLeft {
   float: left;
-  position: absolute;
+  position: relative;
   left: 0px;
   top: 0px;
 }
 #ArrowRight {
     float: right;
-    position: absolute;
+    position: relative;
     top: 0px;
     right: 0px;
 }
