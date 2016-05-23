@@ -313,9 +313,16 @@ footer {
     fill-rule: evenodd;
 }
 
+#ArrowLeft {
+  float: left;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
 #ArrowRight {
     float: right;
     position: absolute;
+    top: 0px;
     right: 10px;
 }
 
