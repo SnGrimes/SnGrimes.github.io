@@ -1,15 +1,11 @@
 <div class="slider">
     
-    
+        <div class="slide" ng-repeat="image in images" ng-show="image.visible">
             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" class="arrows"><path ng-click="prev()" id="ArrowLeft" class="st0" d="M61.8 29.4h-25v16.4L0 23.2 36.7 0v17.2h25.1v12.2z"/></svg>
-    <div class="slide" ng-repeat="image in images" ng-show="image.visible">
-        <a href="{{image.link}}"><img ng-src="img/{{image.src}}" /></a>
-        <div class="slideTitle"><h4>{{image.title}}</h4></div>
-        
-    
-        
-        
-             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" class="arrows"><path ng-click="next()" id="ArrowRight" class="st0" d="M.1 17.3H25V.2l36.8 23.3-36.7 22.1V29.4H0l.1-12.1z"/></svg>   
+            <a href="{{image.link}}"><img ng-src="img/{{image.src}}" /></a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" class="arrows"><path ng-click="next()" id="ArrowRight" class="st0" d="M.1 17.3H25V.2l36.8 23.3-36.7 22.1V29.4H0l.1-12.1z"/></svg>  
+    <div class="slideTitle"><h4>{{image.title}}</h4></div>
+         
                 
 
     
