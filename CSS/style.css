@@ -318,17 +318,17 @@ footer {
     fill-rule: evenodd;
 }
 
-#ArrowLeft {
+.ArrowLeft {
   float: left;
   position: relative;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
-#ArrowRight {
+.ArrowRight {
     float: right;
     position: relative;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 }
 
 #ArrowRight:hover, #ArrowLeft:hover {
