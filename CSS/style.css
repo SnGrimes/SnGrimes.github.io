@@ -310,6 +310,8 @@ footer {
 
 .arrowOverlay {
   z-index: 1;
+  position: absolute;
+  top: 0;
 }
 .Arrows {
     fill:#6295A6;
