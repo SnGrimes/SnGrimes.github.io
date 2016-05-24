@@ -313,31 +313,28 @@ footer {
   position: absolute;
   top: 0;
 }
-.Arrows {
-    fill:#6295A6;
-    fill-rule: evenodd;
-}
 
 .ArrowLeft {
   float: left;
   position: relative;
   left: 0;
   top: 0;
+  height: 100%;
 }
 .ArrowRight {
     float: right;
     position: relative;
     top: 0;
     right: 0;
+    height: 100%;
 }
 
-#ArrowRight:hover, #ArrowLeft:hover {
+.ArrowRight:hover, .ArrowLeft:hover {
     fill: #9FBBC4;
 }
 
 /*fix the arrow position for mozilla*/
 .arrows {
-  
   
    fill:#6295A6;
     fill-rule: evenodd;
@@ -353,39 +350,4 @@ footer {
     box-shadow: 0px 0px 15px #999;
 }
 
-/*                   Media Queries                  */
-
-@media screen and (max-width: 1024px) {
-    .slider {
-        position: relative;
-        width: 60%;
-        top: 40px;
-    }
-    .arrows {
-        top: 280px;
-        left: 30%;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .arrows {
-        top: 280px;
-        
-    }
-}
-
-@media screen and (min-width: 1900px) {
-    
-    .arrows {
-        top: 350px;
-        left: 35%;
-    }
-}
-
-@media screen and (min-width: 2560px) {
-    .arrows {
-        top: 450px;
-        left: 40%;
-    }
-}
 
