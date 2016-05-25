@@ -317,6 +317,8 @@ footer {
 }
 .arrowOverlay svg {
    fill:#6295A6;
+   position: relative;
+   top:50%;
 }
 
 .arrowOverlay svg a:visited {
@@ -326,12 +328,12 @@ footer {
 .ArrowLeft {
   position: absolute;
   left: 0px;
-  top: 50%;
+  top: 0px;
   height: 100%;
 }
 .ArrowRight {
     position: absolute;
-    top: 50%;
+    top: 0px;
     right: 0px;
     height: 100%;
 }
