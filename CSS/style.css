@@ -336,7 +336,7 @@ footer {
     height: 100%;
 }
 
-.ArrowRight, .ArrowLeft {
+.ArrowRight path, .ArrowLeft path {
   top:50%;
 }
 
