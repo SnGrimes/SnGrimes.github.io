@@ -335,10 +335,7 @@ footer {
 
 /*fix the arrow position for mozilla*/
 .arrows {
-  
    fill:#6295A6;
-    fill-rule: evenodd;
-
 }
 
 .arrows a:visited {
