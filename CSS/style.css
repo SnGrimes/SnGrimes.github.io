@@ -324,20 +324,16 @@ footer {
 }
 
 .ArrowLeft {
-  position: absolute;
   left: 0px;
-  top: 0px;
-  height: 100%;
 }
 .ArrowRight {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    height: 100%;
+  right: 0px;
 }
 
 .ArrowRight, .ArrowLeft{
-  top:50%;
+  top:40%;
+  position: absolute;
+  height: 50px;
 }
 
 .ArrowRight:hover, .ArrowLeft:hover {
