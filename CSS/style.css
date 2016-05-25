@@ -315,6 +315,13 @@ footer {
   width: 100%;
   height: 100%;
 }
+.arrowOverlay svg {
+   fill:#6295A6;
+}
+
+.arrowOverlay svg a:visited {
+  color: white;
+}
 
 .ArrowLeft {
   position: absolute;
@@ -333,14 +340,6 @@ footer {
     fill: #9FBBC4;
 }
 
-/*fix the arrow position for mozilla*/
-.arrows {
-   fill:#6295A6;
-}
-
-.arrows a:visited {
-  color: white;
-}
 
 .slide img {
     width: 100%;
