@@ -337,6 +337,7 @@ footer {
 }
 
 .ArrowRight path, .ArrowLeft path {
+  position relative;
   top:50%;
 }
 
