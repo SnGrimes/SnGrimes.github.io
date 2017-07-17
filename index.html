@@ -1,29 +1,75 @@
-<!DOCTYPE html>
-<html ng-app = "portfolio">
-    <!--Portfolio site-->
+<DOCTYPE html>
+<html>
     <head>
-    <title>Shantia's Portfolio</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="CSS/style.css" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat' rel='stylesheet' type='text/css'>
-    <script src="js/angular.js"></script>
-    <script src="js/angular-route.js"></script>
-    <script src="js/portfolio.js"></script>
-     <script src="https://code.angularjs.org/1.4.7/angular-animate.min.js"></script>
-        
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name ="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
     </head>
-    
     <body>
-        <header><h1>The Portfolio of Shantia Grimes</h1></header>
-        <nav>    
-            <ul>
-                <li><a href="#/">Home</a></li>
-                <li><a href="#/blog">Blog</a></li> 
-                <li><a href="#/contact">About</a></li>
-            </ul>
-        </nav>
-        <div class="wrapper" ng-view></div>
-        <footer><p>Nothing</p></footer>
-        
+        <div class="container">
+            <section id="weather_main" class="weather_temp sixty center">
+                <div class="weather">
+                    <p id="city_display"></p>
+                    <p id="weather_display"></p>
+                </div>
+                <div class="temp">
+                    <div class="temperature">
+                        <p id="temp_display"></p><p>&deg;</p><input type="button" class="unit_btn" id="unit_switch" value="F"> <!--onclick="api.toggleUnit()" -->
+                    </div>
+                    <div class="humidity">
+                        <p>Today's Humidity: </p><p id="humidity_display"></p>
+                    </div>
+                    <div class="temp_range">
+                        <p>Today's High is: </p><p id="temphi_display"></p>
+                        <p>Today's Low is: </p><p id="templo_display"></p>
+                    </div>
+                </div>
+            </section>
+            <section class="graph_wndspd sixty center">
+                <div class="graph half_row">
+                    <canvas id="canvas" width ="600" height ="110">
+                    </canvas>
+                </div>
+                <div class="wind half_row">
+                    <p class="wind_block">
+                        Wind Speed: <br><span id="wind_spd" class="wind_data"></span>
+                    </p>
+                    <p class="wind_block">
+                        Wind Direction: <br><span id="wind_dir" class="wind_data"></span>
+                    </p>
+                </div>
+            </section>
+            <section class="five_day sixty center">
+                <div  class="day day_lines"> 
+                    <div class="day_icon"></div>
+                    <p class="day_fill"></p>
+                    <div class="date"><p class="date_fill"></p></div>
+                </div>
+                <div class="day day_lines"> 
+                    <div class="day_icon"></div>
+                    <p class="day_fill"></p>
+                    <div class="date"><p class="date_fill"></p></div>
+                </div>
+                <div class="day day_lines"> 
+                    <div class="day_icon"></div>
+                    <p class="day_fill"></p>
+                    <div class="date"><p class="date_fill"></p></div>
+                </div>
+                <div class="day day_lines"> 
+                    <div class="day_icon"></div>
+                    <p class="day_fill"></p>
+                    <div class="date"><p class="date_fill"></p></div>
+                </div>
+                <div class="day"> 
+                    <div class="day_icon"></div>
+                    <p class="day_fill"></p>
+                    <div class="date"><p class="date_fill"></p></div>
+                </div>
+            </section>
+            <footer><p>Created by <a href="http://www.shantiagrimes.com">Shantia Grimes</a></footer>
+        </div>
+        <script type="text/javascript" src="JS/script.js"></script>
     </body>
-        
 </html>
